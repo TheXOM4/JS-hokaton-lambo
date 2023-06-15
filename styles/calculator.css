@@ -1,0 +1,97 @@
+.calculator {
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.calculator input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.calculator button {
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    font-size: 16px;
+}
+
+#calc {
+    margin-top: 50px;
+}
+
+.selectedMenu__child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  .car-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .car-item {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .car-item:hover {
+    background-color: lightgray;
+  }
+  .selected-car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .car-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+p {
+color:black;  
+}
+
+#selectedMenu {
+    margin-top: 100px;
+}
+
+
+.contacts-container {
+    display: flex;
+  }
+  
+  .map-container {
+    width: 50%;
+  }
+  
+  .contact-info {
+    width: 50%;
+  }
+  
+  #map {
+    margin-top: 50px;
+    width: 300px; /* Измените значение ширины на нужное вам */
+    height: 200px; /* Измените значение высоты на нужное вам */
+  }
+  
+  .phone, .whatsapp, .telegram, .address {
+    margin-bottom: 10px;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+
+.parent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,71 @@
+.header__nav {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.burger {
+    display: flex;
+    align-items: center;
+    width: 55px;
+    height: 30px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.burger span {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    background-image: url(../IMG/icons8-menu-64.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.burger span::before,
+.burger span::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.show-burger span::before,
+.show-burger span::after {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+.show-burger span {
+    background: transparent;
+}
+
+.back-drop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.show-backdrop {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.show-burger span::after {
+    /* transform: rotate(-45deg); */
+    background-image: url(../IMG/icons8-menu-64.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
+}

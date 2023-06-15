@@ -1,0 +1,75 @@
+.menu__fonts {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.output {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap ;
+    gap: 30px ;
+}
+
+.categories__choise {
+    display: flex;
+    justify-content: center;
+}
+
+.wrap {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 250px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.categories__choise {
+    display: flex;
+    justify-content: center;
+}
+
+
+.categories__btn.btnActive {
+    background-color: rgb(121, 4, 4)!important;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.catbtn {
+    display: none;
+    margin-top: 10px;
+}
+
+.show-info .catbtn {
+    display: block;
+}
+
+.wrap p {
+    color: black;
+}
+

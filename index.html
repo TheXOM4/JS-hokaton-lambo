@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../styles/media.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/burger.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <link rel="stylesheet" href="../styles/swiper.css">
+    <link rel="stylesheet" href="../styles/catalog.css">
+    <link rel="stylesheet" href="./styles/accord.css">
+    <link rel="stylesheet" href="./styles/calculator.css">
+    <title>Хокатон</title>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header__nav">
+                <ul class="nav">
+                    <li>
+                        <a href="#main">WELCOME WINDOW</a>
+                    </li>
+                    <li>
+                        <a href="#swiper">REVUELTO</a>
+                    </li>
+                    <li>
+                        <a href="#swiper2">HURACÁN STERRATO</a>
+                    </li>
+                    <li>
+                        <a href="#catalog">Catalog</a>
+                    </li>
+                    <li>
+                        <a href="#accordion">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#calc">Calculator</a>
+                    </li>
+                    <li>
+                        <a href="#selectedMenu">Selected Menu</a>
+                    </li>
+                    <li>
+                        <a href="#map1">Contacts</a>
+                    </li>
+                </ul>
+                <div class="burger">
+                    <span></span>
+                </div>
+                <div class="back-drop"></div>
+            </div>
+            
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="container main__container">
+            <div class="main__wrap">
+                <h1>Welcome to our site!</h1>
+                <p>If you are interested in working with us, please contact us below!</p>
+                
+            <div class="main__buttons">
+                <button class="apply">Apply</button>
+                <button class="check">Check</button>
+                <button class="cancel">cancel setTimeOut</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="modalBackDrop">
+        <div class="modal">
+            <div class="modalHeader">
+                <h2 class="h2">Do you want to order a car? <br> Contact us!</h2>
+                <p class="modalCloseButton">X</p>
+            </div>
+            <div class="modalContent formа">
+                <form>
+                    <input placeholder="name" type="text" id="messageOne">
+                    <input placeholder="number" type="text" id="messageTwo">
+                    <button type="submit" class="modalApplyButton">APPLY</button>
+                </form>
+            </div>
+            <div class="message"></div>
+        </div>
+    </div>
+    
+    
+    
+    <section id="swiper">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div> 
+    </section>
+
+    <section id="swiper2">
+        <div class="swipertwo mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="catalog">
+        <div class="container">
+            <h2 class="catalog__fonts">Catalog</h2>
+            <!-- <h2 class="h22"></h2> -->
+            <select class="categories__choice"></select>
+            <h3></h3>
+            <form id="form1">
+                <input type="text" class="search">
+                <button>Search</button>
+                <button class="buttonX">X</button>
+            </form>
+            <!-- <button class="puton"></button> -->
+            <div class="categories__choise"></div>
+            <div class="output"></div>
+        </div>
+    </section>
+
+
+    <section id="accordion">
+        <div class="container">
+            <h2 class="accord__header">About Us</h2>
+            <div class="row">
+                <div class="col-6">
+                    <div class="accordion-container-1"></div>
+                </div>
+                <div class="col-6">
+                    <div class="accordion-container-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="calc">
+        <div class="container">
+            <div class="calculator">
+                <input type="text" id="display" readonly>
+                <div class="buttons">
+                    <button onclick="appendValue('1')">1</button>
+                    <button onclick="appendValue('2')">2</button>
+                    <button onclick="appendValue('3')">3</button>
+                    <button onclick="appendValue('4')">4</button>
+                    <button onclick="appendValue('5')">5</button>
+                    <button onclick="appendValue('6')">6</button>
+                    <button onclick="appendValue('7')">7</button>
+                    <button onclick="appendValue('8')">8</button>
+                    <button onclick="appendValue('9')">9</button>
+                    <button onclick="appendValue('0')">0</button>
+                    <button onclick="appendOperator('+')">+</button>
+                    <button onclick="appendOperator('-')">-</button>
+                    <button onclick="appendOperator('*')">*</button>
+                    <button onclick="appendOperator('.')">.</button>
+                    <button onclick="calculate()">=</button>
+                    <button onclick="appendOperator('/')">/</button>
+                    <button onclick="clearDisplay()">C</button>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="selectedMenu"> 
+        <div class="container">
+            <div class="selectedMenu__child">
+                <div class="car-list" id="carList"></div>
+                <div class="selected-car" id="selectedCar"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="map1">
+        <div class="container">
+            <div class="parent">
+                <div class="map-container">
+                <div id="map"></div>
+            </div>
+            <div class="contact-info">
+                <div class="phone">
+                    <span>Телефон:</span>
+                    <a href="tel:+996554155755">+996554155755</a>
+                </div>
+                <div class="whatsapp">
+                    <span>WhatsApp:</span>
+                    <a href="https://wa.me/996554155755">Профиль WhatsApp</a>
+                </div>
+                <div class="telegram">
+                    <span>Telegram:</span>
+                    <a href="https://t.me/Emir_Abdrakhmanov">Профиль Telegram</a>
+                </div>
+                <div class="address">
+                    <span>Адрес:</span>
+                    <p>Раззакова 32 Бишкек, 720040</p>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="parent2">
+                <div class="footer-left">
+                    <h3>Abdrakhmanov Emir</h3>
+                </div>
+                <div class="footer-right">
+                    <ul>
+                        <li><a href="https://wa.me/996554155755" target="_blank"><img src="./IMG//icons8-whatsapp-50.png" alt="Whatsapp"></a></li>
+                        <li><a href="https://t.me/Emir_Abdrakhmanov" target="_blank"><img  src="./IMG/icons8-telegram-50.png" alt="Telegram"></a></li>
+                        <li><a href="https://www.instagram.com/papajohhny/" target="_blank"><img src="./IMG/icons8-instagram-50.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsGESFifRtyaF_xlwYZjq6zfIJ3g38DpE&callback=initMap" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../SCRIPTS/script.js"></script>
+</body>
+
+
+</html>
